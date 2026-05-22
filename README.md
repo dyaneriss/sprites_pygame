@@ -37,7 +37,9 @@ print("\n--- Paso 3: Conteo de Referencias ---")
 
 mi_objeto = [9, 9, 9]  # Ref conteo inicial = 1
 # Nota: sys.getrefcount() crea una referencia temporal al evaluar, por eso sumará 1 al total real.
+```
 print(f"Conteo de referencias de mi_objeto: {sys.getrefcount(mi_objeto) - 1}") 
 
 otra_ref = mi_objeto  # Creamos una segunda referencia. Ref conteo = 2
-print(f"Conteo tras nueva referencia: {sys.getrefcount(mi_objeto) - 1}"
+print(f"Conteo tras nueva referencia: {sys.getrefcount(mi_objeto) - 1})"
+```
